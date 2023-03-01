@@ -11,3 +11,15 @@ The MIT license is used, if otherwise, replace the `LICENSE` file and the "licen
 The project name, description and author can be set in the `package.json` file.
 
 Note 3. There are a lot of comments in the files `.env.example` and `hardhat.config.ts`.
+
+Create new ABI:
+
+```
+npx hardhat clear-abi && npx hardhat export-abi
+```
+
+Generate new doc
+
+```
+npx shx rm -rf docs && npx hardhat docgen
+```
